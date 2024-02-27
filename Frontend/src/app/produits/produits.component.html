@@ -13,10 +13,11 @@
               <th>Quantity available</th>
               <th>Image</th>
               <th>
-                <button class="btn btn-outline-primary" (click)="operation='add';initProduit"> ADD</button>
+                <!-- <button class="btn btn-outline-primary" (click)="operation='add';initProduit"> ADD</button> -->
+                <button class="btn btn-custom" (click)="operation='add';initProduit">ADD</button>
               </th>
             </tr>
-          </thead>
+          </thead>  
           <tbody>
             <tr *ngFor="let produit of produits">
               <td>{{produit.name}}</td>
@@ -30,7 +31,10 @@
                 <img *ngIf="!produit.image" src="../../assets/images/product/imageProduit.png" height="75" width="75">
               </td>
               <td id="bttns"> 
-                <button class="btn btn-outline-primary" (click)="operation='edit'; selectedProduit=produit;"> EDIT</button>
+                <button class="btn btn-outline-primary btn-edit" (click)="operation='edit'; selectedProduit=produit;"> EDIT</button>
+
+
+                <!-- <button class="btn btn-outline-primary" (click)="operation='edit'; selectedProduit=produit;"> EDIT</button> -->
                 <button class="btn btn-outline-danger" (click)="operation='delete'; selectedProduit=produit;openConfirmationDialog()"> DELETE</button>
                
               </td>
@@ -41,7 +45,7 @@
       </div>
       <div class="col-lg-5">
         <div class="card">
-          <div class="card-header bg-info text-white">
+          <div class="card-header text-white card-header-product">
             {{operation =='add'?'Add Product':
             operation =='edit'?'Update Product':
             operation =='delete'?'delete':''

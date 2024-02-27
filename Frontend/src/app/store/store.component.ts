@@ -13,8 +13,8 @@ import { ProductsService } from '../services/products/products.service';
 })
 export class StoreComponent implements OnInit {
   sliderValue: number = 0;
-  minValue: number = 100;
-  maxValue: number = 5000;
+  minValue: number = 0;
+  maxValue: number = 1000;
   products: Product[] = [];
   filteredProducts: Product[] = [];
   searchMarque: string = '';
@@ -22,7 +22,7 @@ export class StoreComponent implements OnInit {
   filteredBrand:string='';
   selectedProduit: Product = { name: "", description: "", price: 0, category: { id: 0, name: "" }, quantity: 0, brand: { id: 0, name: "" } };
   Url:string =API_URLS.IMAGE_URL;
-  priceRange: { min: number; max: number } = { min: 30, max: 5000 };
+  priceRange: { min: number; max: number } = { min: 0, max: 1000 };
 
   constructor(
     private produitService: produitService,

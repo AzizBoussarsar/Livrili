@@ -66,7 +66,7 @@
     color: #0a3c4a;
 }
 #productName{
-    color: #19718a;
+    color: #031b48;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
@@ -146,7 +146,7 @@
     padding-left: 0;
 }
 .list-menu a {
-    color: #343a40;
+    color: #031b48;
 }
 
 .card-product-grid .info-wrap {
@@ -165,4 +165,51 @@
 .cont{
     display: flex;
 
+}
+/* Change the color of the Apply button */
+.btn-primary {
+    background-color: #031b48;
+    border-color: #031b48; /* Adjust the border color if needed */
+}
+
+/* Add space between buttons - assuming you want to add space between all buttons within the card-body */
+.card-body .btn {
+    margin-bottom: 10px; /* Adjust the space as needed */
+}
+
+/* Change the color of Min and Max labels */
+.card-body label {
+    color: #031b48;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* Change the color of Product type header */
+.card-header h6.title {
+    color: #031b48;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+}
+.card-header h6.title:hover {
+    transform: scale(1.05);
+}
+
+/* If there is a specific class or id for the Min and Max inputs, you can target them more precisely. */
+/* For example: */
+#minInput, #maxInput {
+    color: #031b48;
+}
+
+/* Assuming there is a need to adjust padding or margin for the .card to space out elements */
+.card {
+    padding: 10px; /* Adjust the padding as needed for spacing within the card */
+}
+
+/* If the Product type title needs to change color on hover */
+.card-header h6.title:hover {
+    color: #031b48;
+}
+
+/* Optional: Adding a hover effect on the Apply button for better user interaction */
+.btn-primary:hover {
+    background-color: #024f86; /* A slightly lighter or darker shade for hover effect */
+    border-color: #024f86;
 }

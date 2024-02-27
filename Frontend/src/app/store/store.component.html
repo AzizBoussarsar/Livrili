@@ -73,12 +73,12 @@
 				<div class="form-row">
 				  <div class="form-group col-md-6">
 					<label>Min</label> 
-					<input type="range" class="custom-range" min="30" max="5000" [(ngModel)]="priceRange.min" >
+					<input type="range" class="custom-range" min="0" max="1000" [(ngModel)]="priceRange.min" >
 					<input class="form-control" placeholder="$0" type="number" [(ngModel)]="priceRange.min" >
 				  </div>
 				  <div class="form-group text-right col-md-6">
 					<label>Max</label>
-					<input type="range" class="custom-range" min="30" max="5000" [(ngModel)]="priceRange.max" >
+					<input type="range" class="custom-range" min="0" max="1000" [(ngModel)]="priceRange.max" >
 					<input class="form-control" placeholder="$5,000" type="number" [(ngModel)]="priceRange.max" >
 				  </div>
 				</div>
