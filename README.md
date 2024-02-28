@@ -7,8 +7,7 @@ For the database we used PostgreSQL.
 ## About This Project
 You can browse items or select an item from the showcase.
 You can store your information for faster purchase.
-You can view your orders and change your account settings.
-You cant add products to your favorites list
+You can view your orders.
 You can add items to your cart 
 You can track your item delivery 
 You can search items.
